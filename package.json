@@ -1,0 +1,21 @@
+{
+  "name": "Node-Express-JWT-REST-Boilerplate",
+  "version": "1.0.0",
+  "description": "Simple Node.js REST API Application Boilerplate with JWT Auth",
+  "author": "Ashraf Latif",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {}
+}
