@@ -58,7 +58,10 @@ router.post('/login', async (req, res) => {
     return res.status(400).send('Email or password is not valid!');
 
   // create & assign a token jwt.sign( {payload}, secret );
-  const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET); // payload here is user id
+  const token = jwt.sign(
+    { _id: user._id, email: user.email, name: user.name },
+    process.env.JWT_SECRET,
+  ); // payload here is user id
 
   // return token to header
   res.header('auth-token', token).send(token);
