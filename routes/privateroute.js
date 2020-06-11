@@ -9,17 +9,13 @@ router.get('/', verify, async (req, res) => {
 
   const { _id, email, name } = req.user;
 
-  try {
-    res.json({
-      user: { _id, email, name },
-      post: {
-        title: 'this is private post',
-        body: 'only authorized user can view this',
-      },
-    });
-  } catch (error) {
-    res.status(404).send('Resource not found');
-  }
+  res.json({
+    user: { _id, email, name },
+    post: {
+      title: 'this is private post',
+      body: 'only authorized user can view this',
+    },
+  });
 });
 
 module.exports = router;
