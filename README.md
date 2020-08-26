@@ -13,7 +13,7 @@
 
 **Build the image**  
 `docker build -t my-node-express-jwt-auth .`  
-**Run & create container** (e.g., in .env file, PORT = 8080)
+**Run & create container** (e.g., in .env file, PORT = 8080)  
 `docker run -itd -p 8080:8080 -v $(pwd):/app --name my-container my-node-express-jwt-auth`  
 or this to make ie undetached:  
 `docker run -it -p 8080:8080 -v $(pwd):/app --name my-container my-node-express-jwt-auth`  
