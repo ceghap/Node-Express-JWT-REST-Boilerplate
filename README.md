@@ -39,11 +39,11 @@ Packages:
 
 - install dependencies: `yarn`
 - Start nodemon: `yarn start:dev`
-- Url: [localhost:3000](localhost:3000)
+- Url: [localhost:8080](localhost:8080)
 
 #### Register a user
 
-`POST localhost:3000/api/user/register`
+`POST localhost:8080/api/user/register`
 Content-Type: application/json
 
 request.body:
@@ -60,7 +60,7 @@ request.body:
 
 #### Login
 
-`POST localhost:3000/api/user/login`
+`POST localhost:8080/api/user/login`
 Content-Type: application/json
 
 request.body:
