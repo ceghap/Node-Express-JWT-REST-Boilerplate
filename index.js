@@ -6,6 +6,8 @@ const app = express();
 const dotenv = require('dotenv');
 // enable .env from process.env
 dotenv.config();
+// port
+const port = process.env.PORT || 3000;
 
 // import mongoose lib
 const mongoose = require('mongoose');
@@ -33,6 +35,6 @@ app.get('/', (req, res) => {
 });
 
 // app listening on port 3000 when started
-app.listen(3000, () => {
-  console.log('running on port 3000');
+app.listen(port, () => {
+  console.log('running on port ' + port + ' of the docker container.');
 });
